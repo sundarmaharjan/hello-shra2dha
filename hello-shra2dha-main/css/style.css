@@ -1,0 +1,546 @@
+/* ================================= 
+  Base Element Styles
+==================================== */
+
+* {
+	box-sizing: border-box;
+}
+
+body {
+	font-family: 'Varela Round', sans-serif;
+	line-height: 1.6;
+	color: #3a3a3a;
+}
+
+p {
+	font-size: .95em;
+	margin-bottom: 1.8em;
+}
+
+h2,
+h3,
+a {
+	color: #093a58;
+}
+
+h2,
+h3 {
+	margin-top: 0;
+}
+
+a {
+	text-decoration: none;
+}
+
+img {
+	max-width: 100%;
+}
+figure {
+	margin: 0;
+	line-height: 0;
+	position: relative;
+} 
+
+figcaption {
+	font-size: .9em;
+	line-height: 1.5;
+	color: #fff;
+	padding: 1em;	
+	background: rgba(19,43,102, .85);
+
+	position: absolute;
+	bottom:0;
+	width:100%;
+}
+
+/* ================================= 
+  Base Layout Styles
+==================================== */
+
+/* ---- Navigation ---- */
+
+.name {
+	font-size: 1.25em;
+	margin:0;
+}
+.main-nav {
+	margin-top:5px;
+}
+.name a,
+.main-nav a {
+	text-align: center;
+	display: block;
+	padding: 10px 15px;
+}
+
+.main-nav a {
+	font-size: .95em;
+	color: #3acec2;
+	text-transform: uppercase;
+}
+
+.main-nav a:hover {
+	color: #e79e16;
+}
+
+/* ---- Layout Containers ---- */
+	.main-header {
+	padding-top:.5em;
+	padding-bottom:.5em;
+	}  
+	.banner,
+	.main-footer {
+	text-align: center;	
+	}
+
+
+
+
+
+.banner {
+	color: #fff;
+	background-image: url("../img/nicolas-j-leclercq-va_nrBLonf8-unsplash.jpg");
+        background-size: cover;
+	padding:7em ;
+	margin-bottom: 0px;
+}
+.col {
+	padding-right:2em;
+	padding-left: 1em;
+
+}
+
+.main-footer {
+	background: #d9e4ea;
+	padding: 1em 0 ;
+	margin-top: 10px;
+}
+
+/* ---- Page Elements ---- */
+
+.logo {
+	width: 190px;
+}
+
+.headline{
+	margin-bottom:0;
+}
+
+.icon-location {
+	width:35px;
+	position: absolute;
+	top:-15px;
+	right:-15px;
+}
+/* ================================= 
+  Media Queries
+==================================== */
+
+@media (min-width: 769px) {
+	  
+	body {
+		padding-top: 68px;
+	}
+	
+	
+	
+	/* fixed header */
+	 .main-header {
+		 position:fixed;
+		 background: #fff;
+		 box-shadow:  0 1px 4px rgba(0, 0, 0,.4);
+		 width: 100%;
+		 top:0;
+		 z-index: 1000;
+	 }
+
+
+
+	.container {
+		width: 90%;
+		margin: 0 auto;
+	}
+.name,
+.col{
+	float:left;
+
+}
+	.primary,
+	.secondary {
+		width:50%;
+	}
+
+	.main-nav {
+		float: right;
+	}
+
+	.main-nav li {
+		display: inline-block;
+		margin-left:15px
+	}
+
+	.tagline {
+		font-size: 1.4em;
+	}
+	/* ---- Float clearfix ---- */
+
+	.clearfix::after {
+		content: " ";
+		display: table;
+		clear: both;
+	}
+
+}
+
+@media (min-width: 1025px) {
+	.container {
+		width:80%;
+		max-width: 1150px;
+	}
+	.primary {
+		width:40%;
+
+	}
+
+	.secondary,
+	.tertiary {
+		width:30%;
+	}
+
+
+
+
+}
+
+.profile-image {
+    margin-top: 50px;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    border: 3px solid grey;
+    transition: all .5s;
+  }
+  .profile-image:hover {
+    transform: scale(1.2) rotate(360deg);
+  }
+
+  .facebook,
+  .twitter,
+  .instagram,
+  .linkedin,
+  .google,
+  .github {
+	  /* float:center;
+	  margin-bottom: 0px;
+	  margin-right: 10px; */
+
+	margin-right: 10px;
+	  margin-bottom: 8px;
+	  margin-left: 4px;
+	  padding: 8px;
+	  border-radius: 100px;
+	  background-color:lightblue;
+	
+	
+	 }
+  /* .w-inline-block {
+    max-width: 100%;
+	display: inline-block; */
+	
+	/* .footer-text {
+		margin-top: 30px;
+		margin-bottom: 5px;
+		margin-left: 15px;
+		font-size: 16px;
+		text-align: left;
+	} */
+
+	a:hover {
+		color:rgba(240, 106, 73, 0.877);
+	}
+/* 
+	.section.accent {
+		background-color: yellow;
+		padding-top: 50px;
+		padding-bottom: 50px;
+		padding-right: 10px;
+		margin-left: 20px;
+	} */
+	.w-container {
+		/* position: relative; */
+		padding-top: 15px;
+		padding-bottom: 50px;
+		padding-right: 15px;
+		padding-left: 15px;
+		
+		margin: 0px;
+	}
+	  
+
+/* Forms
+   ========================================================================== */
+
+/**
+ * Known limitationeducation: by default, Chrome and Safari on OS X allow very limited
+ * styling of `select`, unless a `border` property is set.
+ */education
+
+/**
+ * 1. Correct coloreducation not being inherited.
+ *    Known issue: affects color of disabled elements.
+ * 2. Correct font properties not being inherited.
+ * 3. Address margins set differently in Firefox 4+, Safari, and Chrome.
+ */
+
+button,
+input,
+optgroup,
+select,
+textarea {
+  color: inherit; /* 1 */
+  font: inherit; /* 2 */
+  margin: 0; /* 3 */
+}
+
+/**
+ * Address `overflow` set to `hidden` in IE 8/9/10/11.
+ */
+
+button {
+  overflow: visible;
+}
+
+/**
+ * Address inconsistent `text-transform` inheritance for `button` and `select`.
+ * All other form control elements do not inherit `text-transform` values.
+ * Correct `button` style inheritance in Firefox, IE 8/9/10/11, and Opera.
+ * Correct `select` style inheritance in Firefox.
+ */
+
+button,
+select {
+  text-transform: none;
+}
+
+/**
+ * 1. Avoid the WebKit bug in Android 4.0.* where (2) destroys native `audio`
+ *    and `video` controls.
+ * 2. Correct inability to style clickable `input` types in iOS.
+ * 3. Improve usability and consistency of cursor style between image-type
+ *    `input` and others.
+ */
+
+button,
+html input[type="button"], /* 1 */
+input[type="reset"],
+input[type="submit"] {
+  -webkit-appearance: button; /* 2 */
+  cursor: pointer; /* 3 */
+}
+
+/**
+ * Re-set default cursor for disabled elements.
+ */
+
+button[disabled],
+html input[disabled] {
+  cursor: default;
+}
+
+/**
+ * Remove inner padding and border in Firefox 4+.
+ */
+
+button::-moz-focus-inner,
+input::-moz-focus-inner {
+  border: 0;
+  padding: 0;
+}
+
+/**
+ * Address Firefox 4+ setting `line-height` on `input` using `!important` in
+ * the UA stylesheet.
+ */
+
+input {
+  line-height: normal;
+}
+
+/**
+ * It's recommended that you don't attempt to style these elements.
+ * Firefox's implementation doesn't respect box-sizing, padding, or width.
+ *
+ * 1. Address box sizing set to `content-box` in IE 8/9/10.
+ * 2. Remove excess padding in IE 8/9/10.
+ */
+
+input[type="checkbox"],
+input[type="radio"] {
+  box-sizing: border-box; /* 1 */
+  padding: 0; /* 2 */
+}
+
+/**
+ * Fix the cursor style for Chrome's increment/decrement buttons. For certain
+ * `font-size` values of the `input`, it causes the cursor style of the
+ * decrement button to change from `default` to `text`.
+ */
+
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  height: auto;
+}
+
+/**
+ * 1. Address `appearance` set to `searchfield` in Safari and Chrome.
+ * 2. Address `box-sizing` set to `border-box` in Safari and Chrome
+ *    (include `-moz` to future-proof).
+ */
+
+input[type="search"] {
+  -webkit-appearance: textfield; /* 1 */
+  -moz-box-sizing: content-box;
+  -webkit-box-sizing: content-box; /* 2 */
+  box-sizing: content-box;
+}
+
+/**
+ * Remove inner padding and search cancel button in Safari and Chrome on OS X.
+ * Safari (but not Chrome) clips the cancel button when the search input has
+ * padding (and `textfield` appearance).
+ */
+
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+
+/**
+ * Define consistent border, margin, and padding.
+ */
+
+fieldset {
+  border: 1px solid #c0c0c0;
+  margin: 0 2px;
+  padding: 0.35em 0.625em 0.75em;
+}
+
+/**
+ * 1. Correct `color` not being inherited in IE 8/9/10/11.
+ * 2. Remove padding so people aren't caught out if they zero out fieldsets.
+ */
+
+legend {
+  border: 0; /* 1 */
+  padding: 0; /* 2 */
+}
+
+/**
+ * Remove default vertical scrollbar in IE 8/9/10/11.
+ */
+
+textarea {
+  overflow: auto;
+}
+
+/**
+ * Don't inherit the `font-weight` (applied by a rule above).
+ * NOTE: the default cannot safely be changed in Chrome and Safari on OS X.
+ */
+
+optgroup {
+  font-weight: bold;
+}
+
+/* Tables
+   ========================================================================== */
+
+/**
+ * Remove most spacing between table cells.
+ */
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+td,
+th {
+  padding: 0;
+}
+/*  resume */
+.resume {
+	text-align: center;
+	/* width:20%; */
+	padding:0px;
+}
+
+.note {
+	text-align: left;
+	margin: 50px;
+	padding: 40px;
+}
+.education{
+	width:50%;
+	margin:30px;
+}
+
+.city {
+	background-color: rgb(33, 230, 230);
+	color: white;
+	margin: 0px;
+	padding: 100px;
+  } 
+
+
+
+  .skills{
+	text-align: left;
+	
+	}
+	
+	/* contact form */
+
+
+	input[type=text], select, textarea {
+		width: 100%;
+		padding: 12px;
+		border: 1px solid #ccc;
+		border-radius: 4px;
+		box-sizing: border-box;
+		margin-top: 6px;
+		margin-bottom: 16px;
+		resize: vertical;
+	}
+	
+	input[type=submit] {
+		background-color: #4CAF50;
+		color: white;
+		padding: 12px 20px;
+		border: none;
+		border-radius: 4px;
+		cursor: pointer;
+	}
+	
+	input[type=submit]:hover {
+		background-color: #45a049;
+	}
+
+	.container box{
+		border-radius: 5px;
+		background-color: #f2f2f2;
+		padding: 20px;
+	}
+
+	.contact-form{
+		text-align: center;
+		padding-top: 10%;
+		padding-bottom: 5%;
+    }
+    
+/* container image */
+    /* .banner {
+        /* background-image: url("/home/sundar/Desktop/Pradhananga/img/nicolas-j-leclercq-va_nrBLonf8-unsplash.jpg");
+        background-size: cover; */
+    
+      
